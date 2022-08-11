@@ -14,11 +14,103 @@
 // do same thing to all page folders[x]
 // npm i react-router-dom@5.1[x]
 // import router -  google[x]
-// inside a div with cn app  []
-// Router wrap switch 
-// create Route for each component
-// import all the component
-// home as / 
-// each route need path and compoent 
-// google 
+// inside a div with cn app  [x]
+// Router wrap switch [x]
+// create Route for each component[x]
+// import all the component[x]
+// home as / [x]
+// each route need path and compoent [x]
+// google [x]
+// [x]
+
+114 
+// create new folder, components, in [x]src
+// Navbar.jsx   css[x]
+// import style[x]
+// gt css  copy & paste from???[x]
+// gt jsx [x]
+// jsx nav. [x]
+// cn = {style.navbar} wrap[x]
+// ul wrap li.title cont myMoney[x]
+// sib, li wrap Link to '/login cont [x]login
+// Signup same[x]
+// gt app.jsx[x]
+// import Navbar[x]
+// above switch, insert[x]
+
+115 
+// []
+// gt login jsx [x]
+// gt css copy paste[x]
+// gt login jsx[x]
+// create login form  [    ][]
+  // jsx form cn={styles['login-form']}[x]
+  //  h2 login[]
+  // sib, label wrap[x]
+  // span  email:[x]
+  // sib, input type email[x]
+  // repeat label group with password[x]
+  // add button cn btn cont Login [x]
+// chall.  make it so it will update []the state from input [    ] 
+  //  import useState [x]
+  // state email ""   state password[x]
+  // onchange  that setEmail e.target.[x]value  to setEmail
+
+116 [x]
+// make signup form 
+// fill the form take email 
+// user name 
+// state, label input  onchange
 // 
+
+117
+// create project [x]
+// click on app to start  [x]
+// install fire basee and make the config file [x]
+// npm 8.5  [x]
+// create config.js file [x]
+// copy and paster firebaseConfig object [x]
+// import firebase from 'firebase/app' [x]
+// import 'firebase/firestore'
+// import 'firebase/auth'
+// intialize  use initializeApp  method from firebase,  passing firebaseConfig object [x]
+// invoke fireStore method from firebase, assign to projectFirestore []
+// invoike auth method , assign to projectAuth  [x]
+
+// export destructured from config.js [x]
+
+119
+// create hooks folder inside src [x]
+// create useSignup.js [x]
+// create a plain functino with export [x]
+// useState and import auth fro config [x]
+// state error isPending [x]
+//  insert async  function  signup  [x]
+//  pass email password displayName [x]
+// out side of async, return {error, isPending, signup} [x]
+// insert inside of async, setError(null) [x]
+// setIsPending(true) [x]
+// try {} [x]
+// catch (err) { []
+//  console.log(err.message) setError(err.message) setIsPending(false) [x]
+// }  [x]
+// insert in try{*} [x]
+// await auth.createUserWIthEmailAndPassword() [x]
+// pass email,password [x]
+// console.log(res.user) [x]
+// if (!res) { * } [x]
+// insert, throw new Error('Could not complete signup' ) [x]
+// out sideof if (!res)... , await res.user.updateProfile() [x]
+// pass {displayName } [x]
+// sibl.. setIsPending(false) [x]
+// setError(null) [x]
+
+120
+// gt Signup.js  [x] 
+// import useSignup from hooks  [x] 
+// below states, destrucre the return of hook  when invoke the hooks ; )  [x] 
+// in handleSubmit,  signup function passing email password userName  [x] 
+// below the button, error && p tag with {error}  [] 
+// create diabled button loading when isPending is true  [] 
+// do opposit for signup button  [] 
+// test  [] 

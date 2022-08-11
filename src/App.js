@@ -5,13 +5,15 @@ import React from "react";
 import Signup from "./pages/signup/Signup";
 import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="app">
-    <div>hello world from APP</div>
+
     
-    <Router>
+      <Router>
+        <Navbar /> 
       <Switch>
 
         <Route exact path="/">
