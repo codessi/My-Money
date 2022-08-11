@@ -1,0 +1,24 @@
+112 
+// go to github of this guy and download lesson 112[x]
+// npm i [x]
+// npm start[x]
+
+113
+// git commit[]
+// crateg page folder inside src   wrap[]
+// home  login signup  folder[x]
+// inside home folder, Home.jsx[x]
+// sibiing to Home.jsx,  Home.module.css[x]
+// gt home jsx, import styles from home module css[x]
+// rafce[x]
+// do same thing to all page folders[x]
+// npm i react-router-dom@5.1[x]
+// import router -  google[x]
+// inside a div with cn app  []
+// Router wrap switch 
+// create Route for each component
+// import all the component
+// home as / 
+// each route need path and compoent 
+// google 
+// 
