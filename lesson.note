@@ -185,7 +185,7 @@
 --  no reponse need, just error handle 
 -- export the states and functions as object
 
-124 commit []
+124 commit [x]
 // gt Navbar.js [x]
 // in Navbar block,  bring logout from useLogout() [x]
 // jsx add new li tag after signup, button cn btn onclick logout cont logout  [x]
@@ -193,3 +193,17 @@
 // test in browser [x]
 --adding a button on nav bar
 --when it click clicks logout
+
+
+125 commit []
+
+// gt useLogout  [x]
+// add state isCanceled false [x]
+// add useEffect above return  [x]
+// inside of the block, return ()=> setIsCanceled(true) [x]
+// inside of try block, above setIsPedning(false), add if(!isCanceled){ *} [x]
+// move, insert the setStates  [x]
+// do same in catch block [x]
+
+// copy to useSignup.js [x]
+// import useEffect [x]
