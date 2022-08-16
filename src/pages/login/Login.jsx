@@ -2,15 +2,18 @@ import styles from './Login.module.css'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import React, { useState } from 'react'
+import { useLogin } from './../../hooks/useLogin'
 
 const Login = () => {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const {login, error, isPending} = useLogin()
 
   const onSubmit = (e) => {
     e.preventDefault()
-    console.log(email, password)
+    login(email, password)
+    
   }
 
   return (
@@ -29,7 +32,9 @@ const Login = () => {
         <input type="password" value={password} id="password" onChange={e => setPassword(e.target.value)} />
       </label>
 
-      <button className="btn" type='submit'>Login</button>
+      {!isPending && <button className="btn" type='submit'>Login</button>}
+      {isPending && <button className="btn" type='submit' disabled>Loading</button>}
+      {error && <p>{error}</p>}
       
    </form>
   )
