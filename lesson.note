@@ -195,7 +195,7 @@
 --when it click clicks logout
 
 
-125 commit []
+125 commit [x]
 
 // gt useLogout  [x]
 // add state isCanceled false [x]
@@ -207,3 +207,14 @@
 
 // copy to useSignup.js [x]
 // import useEffect [x]
+
+126 commit []
+
+// create useLogin.js inside of hooks folder  [x]
+// copy paste  [x]
+// change names  [x]
+// fetch passing email password  [x]
+// change and set up dispatch  [x]
+// update user on dispatch  [x]
+
+127 commit 
