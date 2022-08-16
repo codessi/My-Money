@@ -163,7 +163,7 @@
 // gt AuthContext.js  [x]
 // inside of AuthContextProvider, below const [state]..., console.log("AuthContext state: ", state) [x]
 
-123
+123 commit [x]
 // create useLogout.js in hook folder  [x]
 // function  create  [x]
 // import useState  [x]
@@ -185,5 +185,11 @@
 --  no reponse need, just error handle 
 -- export the states and functions as object
 
-124
-//
+124 commit []
+// gt Navbar.js [x]
+// in Navbar block,  bring logout from useLogout() [x]
+// jsx add new li tag after signup, button cn btn onclick logout cont logout  [x]
+// gt useLogout, export the logout function [x]
+// test in browser [x]
+--adding a button on nav bar
+--when it click clicks logout

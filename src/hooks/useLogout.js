@@ -2,10 +2,10 @@ import { useState, useContext } from "react";
 import { auth } from "../config";
 import { AuthContext } from "../contexts/AuthContext";
 
-const useLogout = () => {
+export const useLogout = () => {
   const [error, setError] = useState(null);
   const [isPending, setIsPending] = useState(false);
-  const [dispatch] = useContext(AuthContext);
+  const { dispatch } = useContext(AuthContext);
 
   const logout = async () => {
     setIsPending(true);
