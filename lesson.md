@@ -116,74 +116,32 @@
 // test  [x] 
 
 121 
-// cretate context folder  [x] 
-// create AuthContext.js [x] 
-// import createContext and useReducer from react [x] 
-// export const AuthContext assigned  CreateContext()  [x] 
-// export const AuthContextProvider = () => {*} [x] 
-// return (*) [x] 
-// <AuthContext.Provider> wrap [x] 
-// {children} [x] 
-// above return, const [state, dispatch] assign useReducer(*) [x] 
-// authReducer,{ user:null} [x] 
-// add attribute to AuthContext.Provier, value = {{...state, dispatch }} [] 
+// cretate context folder 
+// create AuthContext.js
+// import createContext and useReducer from react
+// export const AuthContext assigned  CreateContext() 
+// export const AuthContextProvider = () => {*}
+// return (*)
+// <AuthContext.Provider> wrap
+// {children}
+// above return, const [state, dispatch] assign useReducer(*)
+// authReducer,{ user:null}
+// add attribute to AuthContext.Provier, value = {{...state, dispatch }}
 
-//between two const, add another export const authReducer=(state, action) => {*} [x] 
-// switch(action.type){*} [x] 
+//between two const, add another export const authReducer=(state, action) => {*}
+// switch(action.type)
 
-// insert,  default:  [x] 
-// return state [x] 
-// gt index.js [] 
-// import {AuthContextProvider} [x] 
-// wrap <App/> [x] 
-// create useAuthContext.js inside hook folder[] 
-// import {AuthContext} [x] 
-// import , useContext  [x] 
-// export const useAuthContext = () => { *} [x] 
-// insert const context = useContext(AuthContext) [x] 
-// insert return context [x] 
-// above return, if context is falsy, throw Error('useAuthContext must be insie an AuthContextProvider') [x] 
-// 
+(//gt third function, insert dispatch({ type: 'LOG_IN' }))
 
-122
-// gt AuthContex.js [x]
+// default: newline 
+// return state
+// gt index.js
+// import {AuthContextProvider}
+// wrap <App/>
+// create useAuthContext.js
+// import {AuthContext}, useContext 
+// export const useAuthContext = () => { *}
+// const context = useContext(AuthContext)
+// gt 
 
-// insert in switch, case 'LOGIN':  return{...state, user: action.payload} [x]
--- set up the switch case 
 
-// gt useSignup [x]
-// import useAuthContext [x]
-// below the states, const {dispatch} = useAuthContext() [x]
-// inside of try, after await ..updateprofile, dispatch({type: "LOGIN", payload: res.user }) [x]
--- use the dispat function but first you gotta bring in by import and inistialze 
--- using dispatch upload user
--- dispatch takes object type and playload
--- dispatch is action
-
-// gt AuthContext.js  [x]
-// inside of AuthContextProvider, below const [state]..., console.log("AuthContext state: ", state) [x]
-
-123
-// create useLogout.js in hook folder  [x]
-// function  create  [x]
-// import useState  [x]
-// import Auth,  useAuthContext   [x]
-// make state error null isPending false   [x]
-// bring dispatch with useAuthContext  [x]
-// const logout = async ()=> {*}  [x]
-// insert, setError(null) setIsPending(true)  [x]
-// try{} catch(err){}  [x]
-// inside catch block insert, console.log(err.message) setError(err.message) setIsPending(false)  [x]
-// inside try block, await Auth.signOut()  [x]
-// dispatch({type: 'LOGOUT'})  [x]
-// setIsPending(false) setError(null)  [x]
-// outside of try /catch, return {logout, error, isPending}  [x]
-// gt AuthContext, add case same but user: null  [x]
-//   [x]
-
--- call the http with asyn await
---  no reponse need, just error handle 
--- export the states and functions as object
-
-124
-//
