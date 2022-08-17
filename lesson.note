@@ -255,7 +255,7 @@
 // wrap  authIsRead && everything [x]
 // test [x]
 
-131 commit []
+131 commit [x] end of authentication
 
 // gt app.js [x]
 // import redirect [x]
@@ -264,6 +264,15 @@
 // do similar thing to login [x]
 // do signup [x] 
 // 
+
+132 commit []
+
+// gt homepage [x]
+// cn styles.container wrap [x]
+// div.styles.content  [x]transaction list
+// sibliing div style.sidebar [x]
+// gt css copy paste  [x]
+
 
 
 
