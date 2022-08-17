@@ -247,13 +247,24 @@
 // add case in switch, case 'AUTH_IS_READY' [x]
 // return {...state, user: action.payload, authIsReady: true} [x]
 
-130 commit []
+130 commit [x]
 
 //gt app.js [x]
 // import useAuthContext [x]
 // destructure authIsReady from useAuthContext [x]()
 // wrap  authIsRead && everything [x]
 // test [x]
+
+131 commit []
+
+// gt app.js [x]
+// import redirect [x]
+// wrap Home with user&& [x]
+// right above {!user && <Redirect to '/login' />} [x]
+// do similar thing to login [x]
+// do signup [x] 
+// 
+
 
 
 
