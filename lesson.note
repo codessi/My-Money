@@ -217,7 +217,7 @@
 // change and set up dispatch  [x]
 // update user on dispatch  [x]
 
-127 commit []
+127 commit [x]
 
 // gt Login.js [x] 
 // import useLogin [x] 
@@ -227,3 +227,14 @@
 // error && <p> {error} [x] 
 // if pending is true show loading button with disable [x] 
 // else login button show [x] 
+
+128 commit [] 
+
+// gt Navbar.js [x] 
+// import useAuthContext [x] 
+// const {user} = useAuthContext()  [x] 
+// !user && show the login and sign up menu [x] 
+// user && show logout and <li> Hello, {user.displayName} [x] 
+
+
+

@@ -7,6 +7,6 @@ export default function useAuthContext() {
   if (!context) {
     throw Error("useAuthContext must be inside in AuthContextProvider")
   }
-
+// this return object{...state, user:null}
   return context
 }
