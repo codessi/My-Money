@@ -265,13 +265,28 @@
 // do signup [x] 
 // 
 
-132 commit []
+132 commit [x][]
 
 // gt homepage [x]
 // cn styles.container wrap [x]
 // div.styles.content  [x]transaction list
 // sibliing div style.sidebar [x]
 // gt css copy paste  [x]
+// create TransactionForm.jsx in Home folder [x]
+// _rfc [x]
+// import useState [x]
+// const [name, setName] = "" [x]
+// state amount "" [x]
+// create form that looks like on the video [x]
+// I need to put form in side bar [x]
+// create form [x]
+// create couple state  [x]
+// button that submits but for now console an object  [x]
+// all the input need to update on form [x]
+
+133 commit []
+
+//  []
 
 
 
