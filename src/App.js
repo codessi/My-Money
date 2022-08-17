@@ -6,32 +6,33 @@ import Signup from "./pages/signup/Signup";
 import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
 import Navbar from "./components/Navbar";
+import useAuthContext from "./hooks/useAuthContext";
 
 function App() {
+  const { authIsReady } = useAuthContext();
+
   return (
     <div className="app">
+      {authIsReady && (
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
 
-    
-      <Router>
-        <Navbar /> 
-      <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
 
-        <Route exact path="/">
-          <Home />
-        </Route>
-
-        <Route path='/login'>
-          <Login />
-        </Route>
-
-        <Route path='/signup'>
-          <Signup />
-        </Route>
-
-      </Switch>
-    </Router>
-  </div>
+            <Route path="/signup">
+              <Signup />
+            </Route>
+          </Switch>
+        </Router>
+      )}
+    </div>
   );
 }
 
-export default App
+export default App;

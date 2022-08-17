@@ -236,7 +236,7 @@
 // !user && show the login and sign up menu [x] 
 // user && show logout and <li> Hello, {user.displayName} [x] 
 
-129 commit []
+129 commit [x]
 // gt AuthContex [x]
 // add to initial state, authIsReady: false  [x]
 // add useEffect under [x]
@@ -246,6 +246,15 @@
 // insert in the block unsub() [x]
 // add case in switch, case 'AUTH_IS_READY' [x]
 // return {...state, user: action.payload, authIsReady: true} [x]
+
+130 commit []
+
+//gt app.js [x]
+// import useAuthContext [x]
+// destructure authIsReady from useAuthContext [x]()
+// wrap  authIsRead && everything [x]
+// test [x]
+
 
 
 
