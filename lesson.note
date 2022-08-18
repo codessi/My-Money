@@ -400,6 +400,33 @@
 // return () => unsubscribe() [x]
 // return {document, error} [x]
 
+138 commit []
+
+-- goal - to show the all the transaction at home page [x]
+-- bring the document and error [x]
+-- if the error show error message [x]
+-- if there is something in document, show transection [x]
+-- create separte compoent and pass props [x]
+-- map them.  with li and p  [x]
+
+
+// gt home.js [x]
+// import useCollection [x]
+// extact documents , error  [x]
+// inside of cn content insert , {error && p {error}}  [x]
+// {documents && <TransactionList transactions = {documents} />} [x]
+// create and gt TransactionList in home folder [x]
+// copy paste transaction styles in home.module.css [x]
+// gt TransactionList  pass prop transactions [x]
+// ul  cn transactions wrap [x]
+// insert {transactions.map(transaction => { [x]
+  return (*)
+})}
+
+// li key id wrap [x]
+// p cn name cont {name} [x]
+// p cn amount {amount} [x]
+
 
 
 
