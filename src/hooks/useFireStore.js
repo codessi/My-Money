@@ -18,7 +18,7 @@ export default function useFireStore(collection) {
           success: null,
           isPending: true,
         };
-      case "ADDED DOCUMENT":
+      case "ADDED_DOCUMENT":
         return {
           isPending: false,
           document: action.payload,
@@ -55,6 +55,7 @@ export default function useFireStore(collection) {
         type: "ADDED_DOCUMENT",
         payload: addedDocument,
       });
+      console.log("isCanceled", isCancelled)
     } catch (error) {
       dispatcheIfNotCanceled({ type: "ERROR", payload: error.message });
     }
@@ -63,10 +64,10 @@ export default function useFireStore(collection) {
   const deleteDocumet = (doc) => {};
 
   useEffect(() => {
-    return () => {
+
+    return () => 
       setIsCancelled(true);
-    };
   }, []);
 
-  return { addDocument, deleteDocumet };
+  return { addDocument, deleteDocumet, response };
 }

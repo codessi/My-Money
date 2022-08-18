@@ -337,7 +337,35 @@
 // try block,  const cratedAt = timestamp.fromDate(new Date()) [x]
 // inside of await, replace doc with {...doc, createdAt }[x]
 
+136 commit []
 
+// gt TransactionForm  []
+// import useFireStore []
+// const {addDocument , response} = useFireStore('transaction') []
+// addDocument({name, amount}) []
+
+--in the form, we going to make onSubmit to submit the data by giving the collection name "transaction"[x]
+
+-- we are going to add uid that is brought out through home from user  useAuthContext [x]
+-- because home will process user for other stuff[x]
+-- so goto home and bring the user and pass on to form [x]
+
+
+// gt home.js [x]
+// const {user} = useAuthContext() [x]
+// import useAut... [x]
+// insert props in, <TransactionForm uid = {user.uid} [x]
+// gt TransactionForm [x]
+// inside of Transaction form function, pass {uid} [x]
+// inside addDocument(), add uid: uid [x]
+// test and look firestore  [x]
+
+// gt TransactionForm [x]
+// undert handleSubmit , add useEffect  [x]
+// add dependancy of response.success []
+// if(resonse.success){*} [x]
+// setName('') setAmount('') [x]
+// test[x]
 
 
 
