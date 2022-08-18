@@ -327,6 +327,18 @@
 // return { isPending: false, document: null, success: false, error: action.payload} [x]
 // update case "IS_PENDING":, return { isPending: true, document: null, success: false, error: null } [x]
 
+135 timestamp commit []
+
+// gt config [x]
+// const timestamp = firebase.firestore.Timestamp  [x]
+// export timestamp [x]
+// gt useFirestore  [x]
+// import  [x]
+// try block,  const cratedAt = timestamp.fromDate(new Date()) []
+// inside of await, replace doc with {...doc, createdAt }
+
+
+
 
 
 

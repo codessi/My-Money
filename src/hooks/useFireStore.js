@@ -1,5 +1,6 @@
 import React, { useReducer, useState, useEffect } from "react";
-import { firestore } from "./../config";
+import { firestore, timestamp } from "./../config";
+
 
 export default function useFireStore(collection) {
   let initialState = {
@@ -48,7 +49,8 @@ export default function useFireStore(collection) {
   const addDocument = async (doc) => {
     dispatch({ type: "IS_PENDING" });
     try {
-      const addedDocument = await ref.add(doc);
+      const createdAt = timestamp.fromDate(new Date())
+      const addedDocument = await ref.add({...doc, createdAt});
       dispatcheIfNotCanceled({
         type: "ADDED_DOCUMENT",
         payload: addedDocument,
