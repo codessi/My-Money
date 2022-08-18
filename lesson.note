@@ -367,7 +367,7 @@
 // setName('') setAmount('') [x]
 // test[x]
 
-137 commit []
+137 commit [x]
 -- goal - getting all the data of the user....  []
 -- you need error and documents [x]
 -- get the ref from store state the collection   [x]
