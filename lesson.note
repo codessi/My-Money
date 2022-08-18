@@ -284,7 +284,7 @@
 // button that submits but for now console an object  [x]
 // all the input need to update on form [x]
 
-133 commit []
+133 commit [x]
 
 // gt firestore online and create database [x]
 // create useFireStore.js inside hooks folder [x]
@@ -305,6 +305,28 @@
 // useEffect(() => {*}, []) [x]
 // insert, return () => { setIsCanceled(true)} [x]
 // retrun {addDocument, deleteDocument} [x]
+
+134 commit []
+
+// inside of addDoc.., dispatch({*}) [x]
+// type: "IS_PENDING" [x]
+// add, case 'IS_PENDING':  [x]
+// return {...state, isPending: true} [x]
+// inside of addDoc.., try{*} catch [x]
+// insert, await ref.add(doc) [x]
+// assign to const addedDocument [x]
+// below ref insert, [x]
+// const dispatchIfNotCancelled = () =>{*} [x]
+// if(!isCancelled){*} [x]
+// dispatch(action) [x]
+// inside try block, dispatchIfNotCancelled({type: 'ADDED_DOCUMENT', payload: addedDocument }) [x]
+// add, case 'ADDED_DOCUMENT': [x]
+// return { isPending: false, document:action.payload, success: true, error: null} [x]
+// inside of catch block, dispatchIfNotCancelled({type: 'ERROR', payload: err.message }) [x]
+// add case 'ERROR': [x]
+// return { isPending: false, document: null, success: false, error: action.payload} [x]
+// update case "IS_PENDING":, return { isPending: true, document: null, success: false, error: null } [x]
+
 
 
 
