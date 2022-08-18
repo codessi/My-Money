@@ -337,7 +337,7 @@
 // try block,  const cratedAt = timestamp.fromDate(new Date()) [x]
 // inside of await, replace doc with {...doc, createdAt }[x]
 
-136 commit []
+136 commit [x]
 
 // gt TransactionForm  []
 // import useFireStore []
@@ -366,6 +366,44 @@
 // if(resonse.success){*} [x]
 // setName('') setAmount('') [x]
 // test[x]
+
+137 commit []
+-- goal - getting all the data of the user....  []
+-- you need error and documents [x]
+-- get the ref from store state the collection   [x]
+-- https://firebase.google.com/docs/firestore/query-data/listen#web-version-8_1 []
+-- use sanpshot to get the updated data [x]
+
+
+-- get docs from snapshot and separate them extract the data  and id,push them as object, add to array [x]
+-- save to state  [x]
+-- return the state  [x]
+-- 2nd param is onSnapshot is error  insert error function. [x]
+-- unsubscribe by clean up at useEffect [x]
+
+
+// create useCollection.js in hooks [x]
+// export function passing collection [x]
+// import  useEffect useState [x]
+// import fireStore [x]
+// state document null error null  [x]
+// useEffect dependancy collection [x]
+// in the useeffect block, let ref= firestore.collection(collection) [x]
+// const unsubscribe = ref.onSnapshot((snapshot) => {*}) [x]
+// insert, let results = [x] snapshot.docs.forEach(doc => {*}) [x]
+// insert result.push({ ...doc.data(), id: doc.id }) [x]
+// inside of unsubscribe, setDocuments (results) []
+// setError (null) []
+// create second function arguement  passing error  => {*} [x]
+// console.log(error) [x]
+// setError('could not fetch the data') [x]
+// return () => unsubscribe() [x]
+// return {document, error} [x]
+
+
+
+
+
 
 
 

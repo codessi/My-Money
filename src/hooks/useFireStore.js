@@ -55,7 +55,7 @@ export default function useFireStore(collection) {
         type: "ADDED_DOCUMENT",
         payload: addedDocument,
       });
-      console.log("isCanceled", isCancelled)
+    
     } catch (error) {
       dispatcheIfNotCanceled({ type: "ERROR", payload: error.message });
     }

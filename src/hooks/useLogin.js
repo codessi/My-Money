@@ -15,8 +15,6 @@ export function useLogin() {
     try {
       const res = await auth.signInWithEmailAndPassword(email, password);
 
-      console.log(res.user);
-
       if (!res) {
         throw new Error("Could not complete login");
       }
@@ -30,7 +28,7 @@ export function useLogin() {
       }
     } catch (err) {
       if (!isCanceled) {
-        console.log(err.message);
+       
         setError(err.message);
         setIsPending(false);
       }
