@@ -286,7 +286,29 @@
 
 133 commit []
 
-//  []
+// gt firestore online and create database [x]
+// create useFireStore.js inside hooks folder [x]
+// import useReducer useEffect useState [x]
+// projectFirestore from config [x]
+// export const useFirestore function [x]
+// pass collection [x]
+// in the block,  const [response, dispatch] =useReducer(firestoreReducer, initialState) [x]
+// let initialState = {*} [x]
+// insert, document: null, isPending: false, error: null, success: null [x]
+// const firestoreReducer =(state, action) => {*} [x]
+// insert, switch (action.type){*} [x]
+// insert, default:  return state [x]
+// below reponse state, isCancelled false [x]
+// const ref = projectFirestore.collection(collection)  [x]
+// const addDocument = (doc) => {empty} [x]
+// const deleteDocument = (doc) => { }[x]
+// useEffect(() => {*}, []) [x]
+// insert, return () => { setIsCanceled(true)} [x]
+// retrun {addDocument, deleteDocument} [x]
+
+
+
+
 
 
 
