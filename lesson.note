@@ -470,22 +470,23 @@
 
 142 commit []
 
-// gto firestore online
-// rules tab 
+// gto firestore online[x]
+// rules tab [x]
 // 
 
-143 
-//  npm i -g firebase-tools
-// firebase login 
-// gt project file ,firebase init
-// firestore and hosting check
-// use existing project
-// just enter for  default rule
-// PULIC NO, build instead
-// y for SPA 
-// auto github? no default
-// done
-// install firebase ext.
+143 commit []
+//  npm i -g firebase-tools [x]
+// firebase login  [x]
+// gt project file ,firebase init [x]
+// firestore and hosting check [x]
+// use existing project [x]
+// just enter for  default rule [x]
+// PULIC NO, build instead [x]
+// y for SPA  [x]
+// auto github? no.   default [x]
+// done [x]
+
+// install firebase ext. []
 
 144 rule for read and write
 // watched [x]
