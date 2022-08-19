@@ -447,7 +447,7 @@
 
 // add orderby 
 
-141 delete summit [] 
+141 delete commit [x] 
 -- goal  - to delete each
   -- create deleteDocument function 
   -- create button 
@@ -468,6 +468,67 @@
 // button x  onclick () => {deleteDocument(id)} [x]
 // 
 
+142 commit []
+
+// gto firestore online
+// rules tab 
+// 
+
+143 
+//  npm i -g firebase-tools
+// firebase login 
+// gt project file ,firebase init
+// firestore and hosting check
+// use existing project
+// just enter for  default rule
+// PULIC NO, build instead
+// y for SPA 
+// auto github? no default
+// done
+// install firebase ext.
+
+144 rule for read and write
+// watched [x]
+// gt firestore.rules []
+// allow create: if request.auth != null []
+// allow read, delete: if request.auth == resource.data.uid; []
+
+145 deploy firebase rules
+// watched [x] 
+// firebase deploy --only firestore  >> enter
+// still need query where uid == user.uid
+
+146 building react app
+// watched[x]
+// npm run build
+
+147 deploy to firebase
+
+// firebase deploy
+// done
+// firebase dashboard gt
+// gt hosting 
+// click on domain
+// test 
+
+
+148 update and redeploy
+
+// change 
+// npm run build
+// firebase deploy
+// check on hosting on firebase dashboard
+// hard refresh
+
+149 rolling back deployment
+
+// Rollback  on setting  on dashboard
+
+-- goal --
+-- finish lesson
+-- push github
+-- deploy firebase
+-- upload to porfolio 
 
 
 
