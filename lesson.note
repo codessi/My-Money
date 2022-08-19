@@ -474,7 +474,7 @@
 // rules tab [x]
 // 
 
-143 commit []
+143 commit [x]
 //  npm i -g firebase-tools [x]
 // firebase login  [x]
 // gt project file ,firebase init [x]
@@ -486,24 +486,25 @@
 // auto github? no.   default [x]
 // done [x]
 
-// install firebase ext. []
+// install firebase ext. [x]
 
 144 rule for read and write
 // watched [x]
-// gt firestore.rules []
-// allow create: if request.auth != null []
-// allow read, delete: if request.auth == resource.data.uid; []
+// gt firestore.rules [x]
+// allow create: if request.auth != null [x]
+// allow read, delete: if request.auth == resource.data.uid; [x]
+// deploy in next lesson [x]
 
 145 deploy firebase rules
 // watched [x] 
-// firebase deploy --only firestore  >> enter
-// still need query where uid == user.uid
+// firebase deploy --only firestore  >> enter [x]
+// still need query where uid == user.uid [x]
 
-146 building react app
+146 building react app [x]
 // watched[x]
 // npm run build
 
-147 deploy to firebase
+147 deploy to firebase [x]
 
 // firebase deploy
 // done
@@ -513,7 +514,7 @@
 // test 
 
 
-148 update and redeploy
+148 update and redeploy [x]
 
 // change 
 // npm run build
@@ -525,11 +526,26 @@
 
 // Rollback  on setting  on dashboard
 
+--
+
 -- goal --
--- finish lesson
--- push github
--- deploy firebase
--- upload to porfolio 
+-- finish lesson [x]
+-- change title [x]
+-- generate favicon [x]
+-- push github[x]
+-- deploy firebase[x]
+
+
+-- make mobile friendly[]
+  -- left list and input is crampped []
+  -- sticky bottom with open and close button []
+    --design the look []
+
+
+-- upload to porfolio []
+-- clean up comments and console.logs[]
+-- lint error messages clean up []
+
 
 
 
