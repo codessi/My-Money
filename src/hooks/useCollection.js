@@ -1,35 +1,43 @@
-import { useEffect, useState } from "react";
-import {firestore} from './../config'
+import { useEffect, useRef, useState } from "react";
+import { firestore } from "./../config";
 
-export function useCollection(collection) {
-
-  const [documents, setDocuments] = useState(null)
-  const [error, setError] = useState(null)
+export function useCollection(collection, _query, _orderBy) {
+  const [documents, setDocuments] = useState(null);
+  const [error, setError] = useState(null);
+  const query = useRef(_query).current;
+  const orderBy = useRef(_orderBy).current;
 
   useEffect(() => {
-   // calle the collection 
-    // call db 
-    const result = [] 
-    const ref = firestore.collection(collection)
-    const unsub = ref.onSnapshot(snapshot => {
-      snapshot.docs.forEach(doc => {
-        result.push({ ...doc.data(), id:doc.id })
-      })
+    let ref = firestore.collection(collection);
 
-    setDocuments(result)
-    setError(null)
-
-    }, error => {
-      console.log(error)
-      setError('could not fetch the data')
-    })
-
-    
-  
-    return () => {
-     unsub()
+    if (query) {
+      ref = ref.where(...query);
     }
-  }, [collection])
-  
-  return {documents, error}
+      if (orderBy) {
+        ref = ref.orderBy(...orderBy);
+      }
+    // console.log("from useCollection ", typeof query)
+
+    const unsub = ref.onSnapshot(
+      (snapshot) => {
+        const result = [];
+        snapshot.docs.forEach((doc) => {
+          result.push({ ...doc.data(), id: doc.id });
+        });
+
+        setDocuments(result);
+        setError(null);
+      },
+      (error) => {
+        console.log(error);
+        setError("could not fetch the data");
+      }
+    );
+
+    return () => {
+      unsub();
+    };
+  }, [collection, query]);
+
+  return { documents, error };
 }

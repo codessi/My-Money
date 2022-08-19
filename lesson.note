@@ -400,7 +400,7 @@
 // return () => unsubscribe() [x]
 // return {document, error} [x]
 
-138 commit []
+138 commit [x]
 
 -- goal - to show the all the transaction at home page [x]
 -- bring the document and error [x]
@@ -426,6 +426,26 @@
 // li key id wrap [x]
 // p cn name cont {name} [x]
 // p cn amount {amount} [x]
+
+139 firestore quaries commit [x]
+-- goal - match user and show only that data by using where query 
+-- will add if condtion to see if  parameter is passed in as array and spread and code. 
+-- you can't add array as useEffect dependancy, so gotta alter it with useRef
+
+// gt doc  look for where  [x]
+// gt useCollection [x]
+// pass query [x]
+// below ref, insert, if(query){ ref =ref.where(...query)} [x]
+// gt home.js [x]
+// pass in useCollection, ['uid', '==', user.uid] [x]
+// gt useCollection, add query in dependancy [x]
+// above useEffect, const query = useRef(_query).current [x]
+// import useRef [x]
+// 
+
+140 ording firestore queries summit  [x]
+
+// add orderby 
 
 
 

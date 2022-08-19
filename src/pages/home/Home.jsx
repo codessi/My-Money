@@ -1,15 +1,14 @@
 import styles from "./Home.module.css";
-import React, { useEffect } from "react";
+import React from "react";
 import TransactionForm from "./TransactionForm";
 import useAuthContext from "../../hooks/useAuthContext";
-import { firestore } from "../../config";
 import TransactionList from "./TransactionList";
 import { useCollection } from "../../hooks/useCollection";
 
 const Home = () => {
   const { user } = useAuthContext();
-  const { documents, error } = useCollection("transaction");
-  console.log(documents)
+  const { documents, error } = useCollection("transaction", ["uid","==",user.uid], ["createdAt","desc"]);
+  
 
   return (
     <div className={styles.container}>
@@ -20,7 +19,7 @@ const Home = () => {
       </div>
 
       <div className={styles.sidebar}>
-        <TransactionForm uid={user.uid} />
+        <TransactionForm uid={user.uid}  />
       </div>
     </div>
   );
