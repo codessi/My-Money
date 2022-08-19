@@ -447,6 +447,28 @@
 
 // add orderby 
 
+141 delete summit [] 
+-- goal  - to delete each
+  -- create deleteDocument function 
+  -- create button 
+  -- let it connect with credintials
+
+// gt useFireStore [x]
+// inside deleteDocument, dispatch({type:"IS_PEDNGIN"}) [x]
+// try catch block [x]
+// in try block, const deleteDocument = await ref.doc(id).delete() [x]
+// dispatchIfNotCancelled({type: "DELETED_DOCUMENT", payload: deleteDocument}) [x]
+// add case [x]
+//return {isPending: false, document: action.payload, success: true, error:null} [x]
+// in error block, dispatchIfNotCancelled({type: 'ERROR', payload: 'could not delete'}) [x]
+// gt TransactionList [x]
+// import hook [x]
+// bring in deleteDocument and response [x]
+// console.log(reponse) [x]
+// button x  onclick () => {deleteDocument(id)} [x]
+// 
+
+
 
 
 
